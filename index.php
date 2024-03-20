@@ -21,24 +21,29 @@
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
         
-            <i class="fa-brands fa-spotify"></i>
+            <i  class="fa-brands fa-spotify"></i>
 
         </div>
     </nav>
     <div id="contenitore" class="container my-5">
         <div class=" row justify-content-around  flex-wrap gap-4 ">
-            <!-- <div class="col">ciso</div>
-            <div class="col">ciso</div>
-            <div class="col">ciso</div> -->
+            
         
         
         
-            <div class="col-3 p-0 border rounded-2 " id="cards" v-for="disco in dischi_lista">
-                <img class="p-3 img-fluid   w-100 " :src="disco.poster" alt=""> 
+            <div class="col-3 p-0 border rounded-2 " id="cards" v-for="(disco,index) in dischi_lista" @click="handleClick(disco)">
+                <img  class="p-3 img-fluid   w-100 " :src="disco.poster" alt=""> 
             </div>
         </div>
     </div>
-        
+    <div id="Immagine_Grande" class="col " v-if="selectedDisc">
+        <div class="row justify-content-center  align-items-center text-center">
+            <img :src="selectedDisc.poster" alt="">
+            <span id="Nome_canzone">{{selectedDisc.title}}</span>
+            <span id="autore">{{selectedDisc.author}}</span>
+            <span id="anno">{{selectedDisc.year}}</span>
+        </div>
+    </div>
     
 
 

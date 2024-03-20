@@ -5,8 +5,17 @@ createApp({
         return {
             // mi carico l'array che ho preso da json su un nostro arry cosi da poterci lavorare sopra 
             dischi_lista:[],
+            selectedDisc:false,
             
         }
+    },
+    methods: {
+        handleClick(disco){
+            // mi passo nella variabile selectedDisc il valore del mio disco attuale che sto prendendo tramire il click
+            this.selectedDisc=disco;
+
+        }
+        
     },
 
     mounted() {
