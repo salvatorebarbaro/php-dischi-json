@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#app #navbar{
+    background-color: #0E161F !important;
+    color:#18D860;
+}
+#navbar .fa-brands{
+    font-size: 30px;
+    margin-left: 50px;
+}
+#app{
+    background-color: #1d2d3c !important;
+}
+#cards{
+    background-color: #112030;
+}
+#cards img{
+    max-width: 100%;
+}
+#contenitore{
+    background-color: #1d2d3c !important;
+}

@@ -10,10 +10,40 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- axios per chiamate apy -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- collegamento fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     
+<div id="app">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        
+            <i class="fa-brands fa-spotify"></i>
 
+        </div>
+    </nav>
+    <div id="contenitore" class="container my-5">
+        <div class=" row justify-content-around  flex-wrap gap-4 ">
+            <!-- <div class="col">ciso</div>
+            <div class="col">ciso</div>
+            <div class="col">ciso</div> -->
+        
+        
+        
+            <div class="col-3 p-0 border rounded-2 " id="cards" v-for="disco in dischi_lista">
+                <img class="p-3 img-fluid   w-100 " :src="disco.poster" alt=""> 
+            </div>
+        </div>
+    </div>
+        
+    
+
+
+   
+</div>
 
 
 
