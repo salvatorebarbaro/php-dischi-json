@@ -30,12 +30,14 @@
             
         
         
-        
+        <!-- ci cicliamo all'intenro dell'array , quando andiamo a premere il disco andiamo a passarci anche i dati del disco  -->
             <div class="col-3 p-0 border rounded-2 " id="cards" v-for="(disco,index) in dischi_lista" @click="handleClick(disco)">
+                <!-- immagine dinamica per ogni elemento dell array -->
                 <img  class="p-3 img-fluid   w-100 " :src="disco.poster" alt=""> 
             </div>
         </div>
     </div>
+    <!-- contenitore che si mostrera quando sara true -->
     <div id="Immagine_Grande" class="col " v-if="selectedDisc">
         <div class="row justify-content-center  align-items-center text-center">
             <img :src="selectedDisc.poster" alt="">

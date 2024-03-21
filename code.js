@@ -5,6 +5,7 @@ createApp({
         return {
             // mi carico l'array che ho preso da json su un nostro arry cosi da poterci lavorare sopra 
             dischi_lista:[],
+            // qui lo imposto false cosi quando lo vado a premere lui si mostra grazie al v-if
             selectedDisc:false,
             
         }
